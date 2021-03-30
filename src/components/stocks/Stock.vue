@@ -1,14 +1,13 @@
 <template>
-	<h1>The Trader</h1>
+    <h1>Ação</h1>
 </template>
 
 <script>
 export default {
-
+name: "Stock"
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>
-

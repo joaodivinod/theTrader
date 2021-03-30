@@ -1,14 +1,13 @@
 <template>
-	<h1>The Trader</h1>
+
 </template>
 
 <script>
 export default {
-
+name: "portifolio"
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>
-
