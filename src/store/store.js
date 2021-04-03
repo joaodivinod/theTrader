@@ -5,8 +5,9 @@ import stocks from './modules/stocks';
 
 Vue.use(Vuex)
 
-export default new Vue.Store({
+export default new Vuex.Store({
     modules:{
         stocks
     }
+
 })

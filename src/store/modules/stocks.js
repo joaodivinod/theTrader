@@ -1,11 +1,10 @@
-import stocks from '/@data/stoks'
-
+import stocks from "@/data/stocks";
 export default {
     state:{
         stocks:[]
     },
     mutations:{
-        setStocks(state,stocks){
+        setStocks(state, stocks){
             state.stocks = stocks
         }
     },
@@ -13,8 +12,8 @@ export default {
         buyStock({ commit }, order) {
             commit()
         },
-        initStocks({commit}) {
-            commit('setStocks',stocks)
+        initStocks({ commit }){
+            commit('setStocks', stocks)
         }
     },
     getters:{
