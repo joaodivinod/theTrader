@@ -35,6 +35,7 @@ export default {
                 quantity: this.quantity
             }
 
+            // eslint-disable-next-line no-console
             console.log(order)
             this.quantity = 0
 
