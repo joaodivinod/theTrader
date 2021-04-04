@@ -48,10 +48,12 @@ Coisas que eu nunca tinha usado antes e usei nesse projeto
 **Feaatures
 *caso seu saldo seja insuficiente ou ou o valor seja negativo ou float o label de compra fica vermelho
 *Filtros para mostrar os valores como real (R$)
+* Os prezos são randomicos e mudam sempre que você finaliza o dia o que gera a ideia de flutuação de preço das ações. 
+
 
 **Coisas que eu nunca tinha usado antes e usei nesse projeto 
-*Função callback 
-
+* Função callback 
+* operador spread
 
 
 * Criar mensagem para quando o saldo for insuficiente.
