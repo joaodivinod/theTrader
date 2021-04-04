@@ -8,11 +8,11 @@
         <v-card>
             <v-container fill-height>
                 <v-text-field label="Quantidade" type="number"
-                              :error="insufficientFunds || !Number.isInteger(quantity) || quantity < 0"
-                              v-model.number="quantity" />
+                    :error="insufficientFunds || !Number.isInteger(quantity)"
+                    v-model.number="quantity" />
                 <v-btn class="green darken-3 white--text"
-                       :disabled="insufficientFunds || quantity <= 0 || !Number.isInteger(quantity)"
-                       @click="buyStock">{{ insufficientFunds ? 'Saldo Insuficiente' : 'Comprar' }}</v-btn>
+                    :disabled="insufficientFunds || quantity <= 0 || !Number.isInteger(quantity)"
+                    @click="buyStock">{{ insufficientFunds ? 'Insuficiente' : 'Comprar' }}</v-btn>
             </v-container>
         </v-card>
     </v-flex>

@@ -5,14 +5,15 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import Stock from './Stock'
 
 export default {
     components: { Stock },
     computed: {
-        stocks() {
-            return this.$store.getters.stocks
-        }
+        ...mapGetters({
+            stocks: 'stockPortfolio'
+        })
     }
 }
 </script>
