@@ -43,4 +43,14 @@ funcionar sem mais como o objetivo e mostrar o meu conhecimento decidi fazer des
 
 Coisas que eu nunca tinha usado antes e usei nesse projeto 
 
+
+
+**Feaatures
+*caso seu saldo seja insuficiente ou ou o valor seja negativo ou float o label de compra fica vermelho
+
+**Coisas que eu nunca tinha usado antes e usei nesse projeto 
 *Função callback 
+
+
+
+* Criar mensagem para quando o saldo for insuficiente.

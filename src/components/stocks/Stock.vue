@@ -1,49 +1,53 @@
 <template>
-    <v-flex class="pr-3 mb-3 xs12 md6 lg4">
+    <v-flex class="pr-3 pb-3" xs12 md6 lg4>
         <v-card class="green darken-3 white--text">
             <v-card-title class="headline">
-                <strong>{{ stock.name }} </strong> <small> (Preço:{{stock.price}})</small>
+                <strong>{{ stock.name }} <small>(Preço: {{ stock.price | currency }})</small></strong>
             </v-card-title>
         </v-card>
         <v-card>
             <v-container fill-height>
-                <v-text-field label="Quantidade" type="number" v-model.number="quantity"></v-text-field>
-                <v-btn :disabled="quantity<=0 || !Number.isInteger(quantity)"  class="green darken-3 white--text"
-                @click="buyStock"
-                >Comprar</v-btn>
+                <v-text-field label="Quantidade" type="number"
+                              :error="insufficientFunds || !Number.isInteger(quantity) || quantity < 0"
+                              v-model.number="quantity" />
+                <v-btn class="green darken-3 white--text"
+                       :disabled="insufficientFunds || quantity <= 0 || !Number.isInteger(quantity)"
+                       @click="buyStock">{{ insufficientFunds ? 'Saldo Insuficiente' : 'Comprar' }}</v-btn>
             </v-container>
-            <p v-show="quantity<0 || !Number.isInteger(quantity) ">Por favor insira um valor válido</p>
         </v-card>
-
     </v-flex>
 </template>
 
 <script>
 export default {
-    name: "Stock",
-    props:['stock'],
-    data(){
-        return{
-            quantity:0
+    props: ['stock'],
+    data() {
+        return {
+            quantity: 0
         }
     },
-    methods:{
-        buyStock(){
+    computed: {
+        funds() {
+            return this.$store.getters.funds
+        },
+        insufficientFunds() {
+            return this.quantity * this.stock.price > this.funds
+        }
+    },
+    methods: {
+        buyStock() {
             const order = {
                 stockId: this.stock.id,
                 stockPrice: this.stock.price,
                 quantity: this.quantity
             }
-            this.$store.dispatch('buyStock',order)
+            this.$store.dispatch('buyStock', order)
             this.quantity = 0
-
         }
-
     }
-
 }
 </script>
 
-<style scoped>
+<style>
 
 </style>
