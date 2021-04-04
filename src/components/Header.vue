@@ -1,8 +1,9 @@
 <template>
     <v-toolbar app>
         <v-toolbar-title class="headline text-uppercase mr-4">
-            <span>Stock</span>
-            <span class="font-weight-light">Trader</span>
+            <img class="" src="../assets/img/coin.svg" alt="">
+            <span class="my-auto">The</span>
+            <span class="font-weight-light my-auto ">Trader</span>
         </v-toolbar-title>
         <v-toolbar-items>
             <v-btn flat to="/">Início</v-btn>
@@ -59,6 +60,12 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+    .v-toolbar__content .headline {
+        display: flex;
+    }
+    .v-toolbar__content img{
+        width: 45px;
+        margin-right: 20px;
+    }
 </style>

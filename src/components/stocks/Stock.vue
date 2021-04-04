@@ -1,9 +1,10 @@
 <template>
     <v-flex class="pr-3 pb-3" xs12 md6 lg4>
-        <v-card class="green darken-3 white--text">
+        <v-card class=" white--text">
             <v-card-title class="headline">
-                <strong>{{ stock.name }} <small>(Preço: {{ stock.price | currency }})</small></strong>
+                <img :src="stock.img" alt="">
 
+                <strong>{{ stock.name }} <small>(Preço: {{ stock.price | currency }})</small></strong>
             </v-card-title>
         </v-card>
         <v-card>
@@ -49,6 +50,13 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+    .v-card__title img{
+        width: 30px;
+        border-style: none;
+        margin-right: 10px;
+    }
+    .v-card__title{
+        background:#2b2e4a;
+    }
 </style>

@@ -40,5 +40,8 @@ export default {
 	.slide-leave-active {
 		animation: slide-out 0.3s ease;
 	}
+    .v-content__wrap{
+        background-color: #1e6f5c;
+    }
 </style>
 
