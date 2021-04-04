@@ -42,6 +42,8 @@ Coisas que eu nunca tinha usado antes e usei nesse projeto
 *Filtros para mostrar os valores como real (R$)
 * Os prezos são randomicos e mudam sempre que você finaliza o dia o que gera a ideia de flutuação de preço das ações.
   **Coisas que eu nunca tinha usado antes e usei nesse projeto
+  *se uma ação e vendadida ela some automaticamento do portifolio
+  
   
 * Função callback
 * operador spread
