@@ -40,3 +40,7 @@ componentes
 A Aplicação tem modulos criados dentro da pasta store para faciltar a organização,
 a aplicação e pequena e não nessesarimanebnte precisa disso, poderia muito bem
 funcionar sem mais como o objetivo e mostrar o meu conhecimento decidi fazer desta forma
+
+Coisas que eu nunca tinha usado antes e usei nesse projeto 
+
+*Função callback 
