@@ -16,7 +16,7 @@
         <v-toolbar-items>
             <v-btn flat @click="endDay">Finalizar Dia</v-btn>
             <v-menu offset-y>
-                <v-btn flat slot="activator">Salvar & Carregar</v-btn>
+                <v-btn flat slot="activator">Salvar e Carregar</v-btn>
                 <v-list>
                     <v-list-tile @click="saveData">
                         <v-list-tile-title>Salvar Dados</v-list-tile-title>

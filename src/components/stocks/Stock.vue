@@ -3,7 +3,6 @@
         <v-card class=" white--text">
             <v-card-title class="headline">
                 <img :src="stock.img" alt="">
-
                 <strong>{{ stock.name }} <small>(Preço: {{ stock.price | currency }})</small></strong>
             </v-card-title>
         </v-card>

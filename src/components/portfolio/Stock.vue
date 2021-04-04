@@ -2,6 +2,7 @@
     <v-flex class="pr-3 pb-3" xs12 md6 lg4>
         <v-card class="blue darken-3 white--text">
             <v-card-title class="headline">
+                <img :src="stock.img" alt="">
                 <strong>
                     {{ stock.name }}
                     <small>
@@ -55,5 +56,12 @@ export default {
 </script>
 
 <style>
-
+.v-card__title img{
+    width: 30px;
+    border-style: none;
+    margin-right: 10px;
+}
+.v-card__title{
+    background:#2b2e4a;
+}
 </style>
