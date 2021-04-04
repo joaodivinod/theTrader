@@ -3,12 +3,13 @@
         <v-card class="green darken-3 white--text">
             <v-card-title class="headline">
                 <strong>{{ stock.name }} <small>(Preço: {{ stock.price | currency }})</small></strong>
+
             </v-card-title>
         </v-card>
         <v-card>
             <v-container fill-height>
                 <v-text-field label="Quantidade" type="number"
-                    :error="insufficientFunds || !Number.isInteger(quantity)"
+                    :error="insufficientFunds || !Number.isInteger(quantity) || quantity < 0"
                     v-model.number="quantity" />
                 <v-btn class="green darken-3 white--text"
                     :disabled="insufficientFunds || quantity <= 0 || !Number.isInteger(quantity)"
