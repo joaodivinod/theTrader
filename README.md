@@ -47,6 +47,7 @@ Coisas que eu nunca tinha usado antes e usei nesse projeto
 
 **Feaatures
 *caso seu saldo seja insuficiente ou ou o valor seja negativo ou float o label de compra fica vermelho
+*Filtros para mostrar os valores como real (R$)
 
 **Coisas que eu nunca tinha usado antes e usei nesse projeto 
 *Função callback 
