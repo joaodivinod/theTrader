@@ -69,4 +69,4 @@ Além desta principal quero citar aqui algumas outras coisas que eu nunca tinha 
 
 
 
--   A Aplicação tem módulos criados dentro da pasta store para facilitar a organização, a aplicação é pequena e não necessariamente precisa disso, poderia muito bem funcionar sem mais como o objetivo é mostrar o meu conhecimento decidi fazer desta forma.
+-   A aplicação tem módulos criados dentro da pasta store para facilitar a organização, a aplicação é pequena e não necessariamente precisa disso, poderia muito bem funcionar sem mais como o objetivo é mostrar o meu conhecimento decidi fazer desta forma.
